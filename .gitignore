@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data (Opcional: si el CSV pesa más de 100MB, GitHub no te dejará subirlo)
+# dataset_spotify.csv
+
+# DS_Store para Mac
+.DS_Store
