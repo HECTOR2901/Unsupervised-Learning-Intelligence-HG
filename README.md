@@ -1,5 +1,9 @@
 MusicDNA: Segmentación de Spotify y Sistema de Recomendación
 
+**Resumen:** Segmenté 114,000 canciones de Spotify en 3 perfiles sonoros (High Energy, Acoustic/Chill, Dance/Pop) usando K-Means y PCA sobre 9 dimensiones de audio, y construí un motor de recomendación funcional que sugiere 5 canciones similares basándose en la pertenencia al clúster.
+
+**Stack técnico:** Python · Pandas · Scikit-learn · Matplotlib
+
 **Descripción**
 
 Este proyecto utiliza Machine Learning (Aprendizaje No Supervisado) para analizar un dataset de 114,000 canciones de Spotify. 
@@ -32,3 +36,10 @@ Validación de Clústeres: Mediante el uso de PCA, se confirmó que el modelo K-
 Eficiencia del Modelo: A pesar de la alta dimensionalidad inicial (9 variables), la normalización con StandardScaler permitió que el modelo fuera robusto frente a valores extremos en el Tempo o Loudness.
 Escalabilidad: El sistema de recomendación desarrollado es escalable; puede procesar miles de nuevas entradas y asignarlas a un perfil sonoro instantáneamente, facilitando la creación de listas de reproducción automáticas personalizadas.
 
+## Aplicación Práctica
+
+Este tipo de segmentación no supervisada tiene aplicaciones directas en:
+
+- **Generación automática de playlists**: agrupar canciones por "ADN sonoro" sin depender de metadatos manuales (género, artista).
+- **Motores de recomendación escalables**: el modelo puede clasificar nuevas canciones en tiempo real sin reentrenar desde cero.
+- **Segmentación de usuarios**: el mismo enfoque (clustering + reducción de dimensionalidad) es aplicable a segmentar clientes por comportamiento en contextos como banca o retail — identificar perfiles de riesgo o consumo sin etiquetas previas.
